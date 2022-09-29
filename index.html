@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <title>To Do List</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="text-box">
+                <div>
+                    <button id="edit-box" onclick="showAndHideEditors()">Edit Text</button>
+                    <input id="text" type="text" placeholder="Insert your task!" />
+                    <button id="enter" onclick="getInputAndAddIt()">Add it to list!</button>
+                </div>
+                <div id="text-style">
+                    <button class="editors" onclick="DoBold()"><strong>Bold</strong></button>
+                    <button class="editors" onclick=""><em>Italic</em></button>
+                    <button class="editors" onclick="">UPPERCASE</button>
+                    <button class="editors" onclick="">undercase</button>
+                </div>
+            </div>
+
+            <div id="task-list">
+                <ul></ul>
+            </div>
+
+            <!-- chiusura container -->
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
